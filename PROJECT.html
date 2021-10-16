@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla Homepage</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(240, 228, 122) 11.2%,
+          rgb(253, 145, 212) 54.5%,
+          rgb(176, 222, 234) 99.6%
+        );
+      }
+      h1 {
+        text-decoration: underline;
+        color: #dc2f2f;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #dc2f2f;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: inline;
+        margin: 0 15px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .Model S {
+        color: #45171d;
+      }
+      .Model X {
+        color: #e84a5f;
+      }
+      .Model 3 {
+        color: #ff847c;
+      }
+      Model Y {
+        color: #2f1b41;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #dc2f2f;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .learn-more {
+        color: #dc2f2f;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tesla</h1>
+      <h2>Models of Tesla</h2>
+      <ul>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Tesla_Model_S"
+            target="_blank"
+            class="Model S"
+          >
+            Model S
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Tesla_Model_X "
+            target="_blank"
+            class="Model X"
+          >
+            Model X
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Tesla_Model_3 "
+            target="_blank"
+            class="Model 3"
+          >
+            Model 3
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Tesla_Model_Y "
+            target="_blank"
+            class="Model Y"
+          >
+            Model Y
+          </a>
+        </li>
+      </ul>
+      <img
+      src=https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=600/>
+      <hr />
+      <p>
+        Tesla, Inc. is an American electric vehicle and clean energy company
+        based in Palo Alto, California, United States. Tesla designs and
+        manufactures electric cars, battery energy storage from home to
+        grid-scale, solar panels and solar roof tiles, and related products and
+        services. In 2020, Tesla had the most sales of battery electric vehicles
+        and plug-in electric vehicles, capturing 16% of the plug-in market
+        (which includes plug-in hybrids) and 23% of the battery-electric (purely
+        electric) market. Through its subsidiary Tesla Energy, the company
+        develops and is a major installer of photovoltaic systems in the United
+        States. Tesla Energy is also one of the largest global suppliers of
+        battery energy storage systems, with 3 gigawatt-hours (GWh) installed in
+        2020.
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Tesla,_Inc. "
+        target="_blank"
+        class="learn-more"
+      >
+        Read more on wikipedia
+      </a>
+      <button class="buy-button">test tesla drive</button>
+      <p class="footer">This page was built by Renu Kaur</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank You 😍 " +
+            name +
+            " We 'll be in touch by email for test drive!"
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
